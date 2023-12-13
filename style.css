@@ -14,19 +14,27 @@
   padding: 10px;
   min-height: 100vh;
 }
-.box{
-    width: 28vw;
- max-width: 540px;
- background: linear-gradient(to right, #e1e8ec, #c0f5c2);
+/* Add the following rules to your existing CSS */
+
+/* Add the following rules to your existing CSS */
+
+.box {
+    width: 90%;
+    max-width: 540px;
+    background: linear-gradient(to right, #e1e8ec, #c0f5c2);
     border: 7px solid palegreen;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6); /* Increased shadow intensity */
     padding: 20px;
     border-radius: 40px;
     margin: 100px auto 20px;
     padding: 40px 30px 70px;
-    
-   
 }
+
+/* Rest of your existing styles... */
+
+
+/* Rest of your existing styles... */
+
  .box h2{
    
    color: #00650a;
@@ -37,9 +45,9 @@
 }
 
 
-.box h2 img{
-   width: 30px;
-   margin-left: 10px;
+.box h2 img {
+    width: 30px;
+    margin-left: 10px;
 }
 .info{
     display: flex;
@@ -93,8 +101,8 @@ ul li.checked{
     color: #555;
     text-decoration: line-through;
 }
-ul li.checked::before{
-background-image: url(img2.jpg);
+ul li.checked::before {
+    background-image: url(img2.jpg);
 }
 span.edit {
     position: absolute;
@@ -118,4 +126,12 @@ border-radius: 50%;
 ul li :hover{
     background: #edeef0;
 }
+@media screen and (min-width: 600px) {
+    .box {
+        width: 30%; /* Adjust as needed */
+        height: auto ;
+        margin: 10vh auto; /* Center the box */
+    }
+}
+
 
